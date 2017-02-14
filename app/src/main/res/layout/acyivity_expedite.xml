@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/detection_top"
+        layout="@layout/activity_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </include>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <RelativeLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/expedite_phone_tv"
+                android:layout_centerHorizontal="true"
+                android:textSize="25sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/expedite_phone_versions_tv"
+                android:layout_below="@id/expedite_phone_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <ProgressBar
+                android:id="@+id/expedite_progress_pb"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:progressDrawable="@drawable/expedite_pro"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/expedite_progress_tv"
+                android:layout_marginRight="15dp"
+                android:textColor="#02e0f9"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:layout_below="@id/expedite_progress_pb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="0.8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <Button
+                android:id="@+id/expedite_top_button_bt"
+                android:background="@drawable/one"
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ListView
+        android:visibility="gone"
+        android:id="@+id/expedite_listview_lv"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </ListView>
+    <RelativeLayout
+        android:id="@+id/expedite_gong_pro"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ProgressBar
+            android:layout_centerInParent="true"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <CheckBox
+        android:id="@+id/expedite_allbotton_bot"
+
+        android:background="@drawable/checkbox_dra"
+        android:button="@null"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    <Button
+
+        android:id="@+id/expedite_botton_button_bt"
+        android:background="@drawable/phone_one"
+        android:layout_centerInParent="true"
+        android:layout_width="240dp"
+        android:layout_height="30dp" />
+</RelativeLayout>
+</LinearLayout>

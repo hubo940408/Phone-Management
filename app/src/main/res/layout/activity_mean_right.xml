@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/activity_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </include>
+
+    <RelativeLayout
+        android:background="@drawable/mean_border"
+        android:layout_weight="1"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:text="开机启动"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_centerVertical="true"
+            android:id="@+id/right_start_cb"
+            android:button="@null"
+            android:background="@drawable/right_check"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@drawable/mean_border"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:text="通知图标"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_centerVertical="true"
+            android:id="@+id/right_notice_cb"
+            android:button="@null"
+            android:background="@drawable/right_check"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@drawable/mean_border"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:text="消息推送"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_centerVertical="true"
+            android:id="@+id/right_xiaoxi_cb"
+            android:button="@null"
+            android:background="@drawable/right_check"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/set_help_rl"
+        android:background="@drawable/mean_border"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:text="帮助说明"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:background="@mipmap/jiantou"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@drawable/mean_border"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:text="意见反馈"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:background="@mipmap/jiantou"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@drawable/mean_border"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:text="好友分享"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:background="@mipmap/jiantou"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@drawable/mean_border"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:text="版本更新"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:background="@mipmap/jiantou"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/right_aboutus_rl"
+        android:background="@drawable/mean_border"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:text="关于我们"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:background="@mipmap/jiantou"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+</LinearLayout>

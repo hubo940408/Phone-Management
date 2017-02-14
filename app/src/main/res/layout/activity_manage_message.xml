@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/activity_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </include>
+    <RelativeLayout
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ListView
+            android:id="@+id/manage_message_listview_lv"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+        <RelativeLayout
+            android:visibility="visible"
+            android:id="@+id/mesmes_pb_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+         <ProgressBar
+             android:layout_centerInParent="true"
+             android:layout_width="200dp"
+             android:layout_height="200dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <CheckBox
+            android:id="@+id/manage_message_botimage_iv"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/checkbox_dra"
+            android:button="@null"
+            android:layout_centerVertical="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <Button
+            android:textSize="20sp"
+            android:text="卸载所选软件"
+            android:layout_centerInParent="true"
+            android:background="@drawable/one"
+            android:id="@+id/manage_message_button_bt"
+            android:layout_centerVertical="true"
+            android:layout_width="250dp"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--设置渐变颜色-->
+    <gradient android:startColor="#333df70f"
+        android:endColor="#5ac419"
+        android:angle="270"/>
+    <!--设置圆角-->
+    <corners android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:bottomLeftRadius="10dp"/>
+</shape>

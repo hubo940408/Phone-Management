@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/detection_top"
+        layout="@layout/activity_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </include>
+    <LinearLayout
+        android:layout_below="@id/detection_top"
+        android:id="@+id/detction_run_rl"
+        android:background="@drawable/sel"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+        <RelativeLayout
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ProgressBar
+                android:layout_centerHorizontal="true"
+                android:progressDrawable="@drawable/mypro"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_centerVertical="true"
+                android:id="@+id/dete_big"
+                android:layout_width="180dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:background="@drawable/cell_sum"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/dete_big"
+                android:layout_width="15dp"
+                android:layout_height="50dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/detection_tectview_tv"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+<ListView
+    android:layout_below="@id/detction_run_rl"
+    android:id="@+id/detection_listview_lv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+</ListView>
+
+    <RelativeLayout
+        android:id="@+id/rl_detection_rl"
+        android:visibility="gone"
+        android:background="#cc605353"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="#ffffff"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="300dp"
+            android:layout_height="200dp">
+            <RelativeLayout
+                android:layout_weight="1"
+                android:background="@drawable/sel"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:text="电池电量信息"
+                    android:textColor="#0349fa"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:background="@drawable/sel"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textSize="20sp"
+                    android:id="@+id/dettection_battery_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:background="@drawable/sel"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/dettection_t_battery_tv"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <RelativeLayout
+
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/detection_queding_bt"
+                        android:text="确 定"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

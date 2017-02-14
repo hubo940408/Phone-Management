@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:layout_centerVertical="true"
+        android:id="@+id/guide_vp"
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+    </android.support.v4.view.ViewPager>
+    <TextView
+        android:id="@+id/guide_skip_im"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:layout_margin="15dp"
+        android:text="直接跳过"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <RelativeLayout
+            android:id="@+id/guide_rl1_rl"
+            android:layout_width="50dp"
+            android:gravity="center"
+            android:layout_height="100dp">
+            <ImageView
+                android:background="@mipmap/colorlv"
+                android:id="@+id/guide_one_im"
+                android:layout_width="15dp"
+                android:layout_height="15dp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/guide_rl2_rl"
+            android:layout_width="50dp"
+            android:gravity="center"
+            android:layout_height="100dp">
+            <ImageView
+                android:id="@+id/guide_two_im"
+                android:background="@mipmap/colorhui"
+                android:layout_width="15dp"
+                android:layout_height="15dp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/guide_rl3_rl"
+            android:layout_width="50dp"
+            android:gravity="center"
+            android:layout_height="100dp">
+            <ImageView
+                android:background="@mipmap/colorhui"
+                android:id="@+id/guide_three_im"
+                android:layout_width="15dp"
+                android:layout_height="15dp"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

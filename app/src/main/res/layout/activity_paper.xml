@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/activity_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </include>
+
+    <RelativeLayout
+        android:background="#0817e6"
+
+        android:layout_weight="2.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/parper"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:text="已发现"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="0 B"
+            android:id="@+id/parper_textview_xinxi"
+            android:textSize="40sp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBottom="@id/parper"
+            android:layout_toRightOf="@id/parper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/parper_all_rl"
+            android:background="@drawable/sel"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/all"
+                android:text="全部"
+                android:textSize="25sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ProgressBar
+                android:indeterminateOnly="true"
+                style="?android:attr/progressBarStyleSmall"
+                android:indeterminateDrawable="@drawable/dialog_style_xml_icon"
+                android:id="@+id/parper_pro_all"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/parper_all_tv"
+                android:textSize="25sp"
+                android:hint="0 B"
+                android:layout_toRightOf="@id/all"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/parper_all"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/jiantou"
+                android:layout_marginRight="15dp"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/parper_document_rl"
+        android:background="@drawable/sel"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/document"
+            android:text="文档"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:indeterminateOnly="true"
+            style="?android:attr/progressBarStyleSmall"
+            android:indeterminateDrawable="@drawable/dialog_style_xml_icon"
+            android:id="@+id/parper_pro_document"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:id="@+id/parper_document_tv"
+            android:hint="0 B"
+            android:textSize="25sp"
+            android:layout_toRightOf="@id/document"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/parper_txt"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/jiantou"
+            android:layout_marginRight="15dp"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/parper_video_rl"
+        android:background="@drawable/sel"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/video"
+            android:text="视频"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:indeterminateOnly="true"
+            style="?android:attr/progressBarStyleSmall"
+            android:indeterminateDrawable="@drawable/dialog_style_xml_icon"
+            android:id="@+id/parper_pro_video"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:id="@+id/parper_video_tv"
+            android:hint="0 B"
+            android:textSize="25sp"
+            android:layout_toRightOf="@id/video"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/parper_video"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/jiantou"
+            android:layout_marginRight="15dp"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/parper_frequency_rl"
+        android:background="@drawable/sel"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/frequency"
+            android:text="音频"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:indeterminateOnly="true"
+            style="?android:attr/progressBarStyleSmall"
+            android:indeterminateDrawable="@drawable/dialog_style_xml_icon"
+            android:id="@+id/parper_pro_frequency"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:hint="0 B"
+            android:id="@+id/parper_frequencyo_tv"
+            android:textSize="25sp"
+            android:layout_toRightOf="@id/frequency"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/parper_audivo"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/jiantou"
+            android:layout_marginRight="15dp"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/parper_image_rl"
+        android:background="@drawable/sel"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/image"
+            android:text="图像"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:indeterminateOnly="true"
+            style="?android:attr/progressBarStyleSmall"
+            android:indeterminateDrawable="@drawable/dialog_style_xml_icon"
+            android:id="@+id/parper_pro_image"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:hint="0 B"
+            android:id="@+id/parper_image_tv"
+            android:textSize="25sp"
+            android:layout_toRightOf="@id/image"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/parper_image"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/jiantou"
+            android:layout_marginRight="15dp"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/parper_package_rl"
+        android:layout_weight="1"
+        android:background="@drawable/sel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/package_rl"
+            android:text="压缩包"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:indeterminateOnly="true"
+            style="?android:attr/progressBarStyleSmall"
+            android:indeterminateDrawable="@drawable/dialog_style_xml_icon"
+            android:id="@+id/parper_pro_package"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:hint="0 B"
+            android:id="@+id/parper_package_tv"
+            android:textSize="25sp"
+            android:layout_toRightOf="@id/package_rl"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/parper_zip"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/jiantou"
+            android:layout_marginRight="15dp"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/parper_thepackage_rl"
+        android:layout_weight="1"
+        android:background="@drawable/sel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/thepackage_rl"
+            android:text="程序包"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:indeterminateOnly="true"
+            style="?android:attr/progressBarStyleSmall"
+            android:indeterminateDrawable="@drawable/dialog_style_xml_icon"
+            android:id="@+id/parper_pro_thepackage"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:hint="0 B"
+            android:id="@+id/parper_thepackage_tv"
+            android:textSize="25sp"
+            android:layout_toRightOf="@id/thepackage_rl"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/parper_apk"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/jiantou"
+            android:layout_marginRight="15dp"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+</LinearLayout>

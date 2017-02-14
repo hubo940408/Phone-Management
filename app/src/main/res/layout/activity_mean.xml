@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/personal.edu.phoneh"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <include
+           layout="@layout/activity_top"
+           android:layout_width="match_parent"
+           android:layout_height="50dp">
+       </include>
+        <RelativeLayout
+            android:layout_weight="2"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <personal.edu.phoneh.shared.RoundProgressBar
+                android:id="@+id/mean_round_pb"
+                android:layout_centerInParent="true"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android_custom:startAngle="-90"
+                android_custom:roundColor="#00000000"
+                android_custom:style="FILL"
+                android_custom:roundProgressColor="#ea8e1d"
+                />
+            <RelativeLayout
+                android:id="@+id/mean_rocket_rl"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:background="@drawable/mean_home_big"
+                android:layout_centerInParent="true">
+                <TextView
+                    android:id="@+id/mean_number_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="50dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@id/mean_number_tv"
+                    android:layout_alignBottom="@id/mean_number_tv"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="5dp"
+                    />
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/mean_number_tv"
+                    android:layout_centerHorizontal="true"
+                    >
+                    <TextView
+                        android:id="@+id/mean_home_tv"
+                        android:background="@drawable/mean_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:textColor="#ffffff"
+                        android:text="手机加速"
+                        android:textSize="20sp"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1.1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <GridView
+                android:layout_alignParentBottom="true"
+                android:id="@+id/mean_gridview_gv"
+                android:numColumns="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </GridView>
+        </RelativeLayout>
+    </LinearLayout>
+
+<RelativeLayout
+
+    android:id="@+id/mean_photo_run"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
+</RelativeLayout>
